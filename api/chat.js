@@ -45,9 +45,9 @@ Khi trả lời người dùng:
       return res.status(500).json({ error: "Server API Key not configured" });
     }
 
-    // Call Google Gemini API (gemini-1.5-flash) using lightweight fetch
+    // Call Google Gemini API (gemini-2.5-flash) using lightweight fetch
     // Doc: https://ai.google.dev/api/rest/v1beta/models/generateContent
-    const geminiEndpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+    const geminiEndpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
     
     const requestBody = {
       contents: [

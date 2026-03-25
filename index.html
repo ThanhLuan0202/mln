@@ -156,6 +156,35 @@
         <p>&copy; 2024 Philosophy Presentation - Đại học (Assignment Chương 6). Built for Digital Era.</p>
     </footer>
 
+    <!-- AI Chatbot UI -->
+    <div id="ai-chat-container">
+        <!-- Chat Window -->
+        <div id="ai-chat-window" class="chat-hidden glass-card">
+            <div class="chat-header">
+                <div class="chat-title">
+                    <span class="glow-dot"></span> Giảng viên AI
+                </div>
+                <button id="close-chat" class="icon-btn">✖</button>
+            </div>
+            
+            <div id="chat-messages" class="chat-body">
+                <div class="message ai-message">
+                    Chào bạn! Mình là trợ lý AI mảng Triết học Mác-Lênin. Bạn có câu hỏi nào về Công nghiệp hóa & Hiện đại hóa gắn với Kỷ nguyên số không?
+                </div>
+            </div>
+            
+            <div class="chat-footer">
+                <input type="text" id="chat-input" placeholder="Hỏi về triết học..." autocomplete="off">
+                <button id="send-chat" class="btn-primary-small">Gửi</button>
+            </div>
+        </div>
+
+        <!-- Floating Button -->
+        <button id="ai-chat-btn" class="btn-primary">
+            💬 Hỏi AI
+        </button>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

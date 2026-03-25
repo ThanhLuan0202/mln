@@ -1,7 +1,7 @@
 // Serverless function for Vercel
 // Route: POST /api/chat
 
-export default async function handler(req, res) {
+module.exports = async function (req, res) {
   // CORS setup for testing locally if needed, Vercel standard supports it
   res.setHeader('Access-Control-Allow-Credentials', true);
   res.setHeader('Access-Control-Allow-Origin', '*');
